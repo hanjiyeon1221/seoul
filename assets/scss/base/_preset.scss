@@ -1,0 +1,49 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+// 공동 로고
+.sp-bg {
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+}
+
+// 메인 로고
+.sp-bg2 {
+    background-image: url(../images/sp-bg2.png);
+    background-repeat: no-repeat;
+}
+
+// sns 로고
+.sp-bg3 {
+    background-image: url(../images/sp-bg3.png);
+    background-repeat: no-repeat;
+}
+
+// service 로고
+.sp-bg4 {
+    background-image: url(../images/sp-bg4.png);
+    background-repeat: no-repeat;
+}
+
+// sns 로고2
+.sp-bg5 {
+    background-image: url(../images/sp-bg5.png);
+    background-repeat: no-repeat;
+}
+
+// 가상선택자 기본값
+%before-after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

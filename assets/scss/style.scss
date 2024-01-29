@@ -1,0 +1,11 @@
+// 임포트
+// @import './utils/var';
+@import './utils/mixin';
+
+@import './base/reset';
+@import './base/preset';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/main';

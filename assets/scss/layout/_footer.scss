@@ -1,0 +1,110 @@
+.footer {
+    .link-area {
+    }
+    .link-list {
+        display: flex;
+        padding: 15px 0;
+    }
+    .link-item {
+        position: relative;
+        padding: 0 10px;
+
+        a {
+            display: block;
+            font-size: 12px;
+            color: #636363;
+        }
+
+        &.policy > a {
+            color: #000;
+            font-weight: 700;
+        }
+        &.kc {
+            padding-left: 0;
+
+            a {
+                @extend .sp-bg3;
+
+                width: 114px;
+                height: 24px;
+                background-position: 0 -30px;
+            }
+        }
+    }
+    .link-item + .link-item::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 1px;
+        height: 14px;
+        margin-top: -6px;
+        background: #dcdcdc;
+    }
+    .link-item:last-child::before {
+        display: none;
+    }
+    .link-item:first-child {
+        padding-left: 0;
+    }
+
+    // address영역
+    .addr-area {
+        display: flex;
+        padding: 22px 0;
+        border-top: 1px solid #ccc;
+    }
+    .foot-logo {
+        @extend .sp-bg;
+
+        margin-right: 40px;
+        width: 108px;
+        height: 45px;
+        background-position: -180px 0;
+    }
+    .address {
+        p {
+            font-size: 12px;
+            color: #636363;
+        }
+        .city {
+            a {
+                font-size: 11px;
+                font-weight: 400;
+            }
+        }
+        .tell {
+        }
+        .copy {
+            font-size: 11px;
+        }
+    }
+    .mark {
+        margin-left: auto;
+    }
+
+    // 퀵탑버튼
+    .quick-area {
+        position: fixed;
+        left: 50%;
+        bottom: 98px;
+        transform: translateX(600px);
+        display: block;
+        width: 34px;
+        height: 34px;
+        z-index: 100;
+
+        .quickTop {
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: 1s;
+
+            &.on {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    }
+}
